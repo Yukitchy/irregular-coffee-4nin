@@ -12,7 +12,7 @@
 :root{--bg:#fff;--ink:#241a16;--sub:#6b5f5a;--line:#e9e2de;--accent:#b8408f;--soft:#fbf3f8;--brown:#5a3e2b;--tan:#f5efe9}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:64px}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans JP",system-ui,-apple-system,sans-serif;line-height:1.75;font-size:16px;word-break:keep-all;overflow-wrap:anywhere}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans JP",system-ui,-apple-system,sans-serif;line-height:1.75;font-size:16px;word-break:normal;overflow-wrap:anywhere;line-break:strict}
 a{color:var(--accent)}
 .wrap{max-width:820px;margin:0 auto;padding:0 16px}
 header.hero{background:var(--brown);color:#fff;padding:56px 0 40px}
@@ -35,7 +35,7 @@ li{margin:4px 0}
 li b{font-weight:900}
 .kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:14px 0 20px}
 .kpi div{background:var(--tan);border-radius:14px;padding:14px 14px 10px}
-.kpi .n{font-size:30px;font-weight:900;line-height:1.1;color:var(--brown)}
+.kpi .n{font-size:clamp(22px,6vw,30px);font-weight:900;line-height:1.1;color:var(--brown);white-space:nowrap}
 .kpi .l{font-size:13px;color:var(--sub);font-weight:700}
 table{width:100%;border-collapse:collapse;font-size:15px;margin:8px 0 18px}
 th,td{text-align:left;padding:9px 8px;border-bottom:1px solid var(--line);vertical-align:top}
